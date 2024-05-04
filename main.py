@@ -25,9 +25,9 @@ import uvloop
 from subprocess import getstatusoutput
 
 bot = Client("bot",
-             bot_token= "7160975009:AAHvheXo-Cqfu5gSpftzpZbLjXHLu3SUuj0",
-             api_id= 28528007,
-             api_hash= "38464da16c80310cabc8d13952419cf3"
+             bot_token= "6468168035:AAHXsNKC9DYYCi2q1xcMfjY_J_2kuDe6VZ4",
+             api_id= 27952989,
+             api_hash= "74f04808a359e9a516e955ec243613ca"
 )
 
 @bot.on_message(filters.command(["start"]))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["hemu"]))
+@bot.on_message(filters.command(["Naruto"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Now Send Me Your **txt** File & Follow Bot Instructions**")
     input: Message = await bot.listen(editable.chat.id)
